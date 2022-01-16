@@ -10,6 +10,12 @@
         "price": 250,
         "storage": 36
         
+      },
+      {
+        "name": "product 3",
+        "price": 250,
+        "storage": 36
+        
       }
     
 ]

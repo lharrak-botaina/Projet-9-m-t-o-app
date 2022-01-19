@@ -27,6 +27,7 @@ function display(currentForecast) {
     document.getElementById('city').textContent= currentForecast.city
     document.getElementById('temp').textContent= currentForecast.temp+ ""+ "°C"
 
+    document.getElementById('icon').src = "http://openweathermap.org/img/w/"+currentForecast.iconCode+".png";
 
     document.getElementById('desc').textContent= currentForecast.description
     document.getElementById('country').textContent= currentForecast.humidity
@@ -40,4 +41,4 @@ function display(currentForecast) {
 
     let year =today.getFullYear();
 
-    dateToday.textContent =`${day}/${month}/${year}`
+    dateToday.textContent =`${day}/${month}/${year} `

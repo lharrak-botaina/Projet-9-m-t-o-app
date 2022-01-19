@@ -1,9 +1,13 @@
 img{
-    width: 50PX;
-    height: 50px;
+    width: 100PX;
+    height: 90px;
 }
 .humidity{
 display: flex;
 justify-content: flex-start;
 
+}
+#date{
+    font-size: 30px;
+    
 }

@@ -45,6 +45,7 @@ class WeatherManager {
         weather.description = json.weather[0].main
         weather.iconCode = json.weather[0].icon
         weather.temp = json.main.temp
+        weather.country = json.main.country
         weather.humidity = json.main.humidity
         this.#_currentForecast = weather
 

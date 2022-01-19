@@ -26,7 +26,7 @@ async function onSearch() {
 function display(currentForecast) {
     document.getElementById('city').textContent= currentForecast.city
     document.getElementById('temp').textContent= currentForecast.temp+ ""+ "°C"
-    
+
 
     document.getElementById('desc').textContent= currentForecast.description
     document.getElementById('country').textContent= currentForecast.humidity

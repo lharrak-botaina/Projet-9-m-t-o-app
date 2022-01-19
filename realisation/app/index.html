@@ -28,25 +28,31 @@
     <div class="current_weather">
         <div>
             
-            <p id="descri"></p>
+            <!-- <p id="descri"></p> -->
         </div>
         
            
             <div class="container-fluid px-1 px-md-4 py-5 mx-auto">
                 <div class="row   justify-content-center px-3">
                     <div class="  card">
-                        <p id="date" class="ml-4 mb-4"></p>
+                        <div class="cityDate">
+                            <p id="date" class="ml-4 mb-4"></p>
+                            <h2  id="city" class="ml-auto mr-4 mt-3 mb-0"></h2>
+                           
+                        </div>
+                        
+                        <img src="http://openweathermap.org/img/w/" id="icon">
+
                         <h2  id="city" class="ml-auto mr-4 mt-3 mb-0"></h2>
                         <!-- <p id="icon"></p> -->
                         <p id="desc" class="ml-auto mr-4 mb-0 med-font"></p>
-                        <h1 id="temp" class="ml-auto mr-4 large-font">&#176;</h1>
                         <div class="humidity">
-                            <i id="fa-tint" class="fas fa-tint"></i>
-
-                            <img src="http://openweathermap.org/img/w/" id="icon">
-                            <!-- <img src="/realisation/humidity.png" alt="">  -->
+                            <img id="iconHumidity" src="https://img.icons8.com/external-dreamstale-lineal-dreamstale/32/000000/external-humidity-weather-dreamstale-lineal-dreamstale.png"/>
+                          
                             <p id="country" class="time-font  mb-0 ml-4 mt-auto"><span class="sm-font"></span></p>
                         </div>
+                        <h1 id="temp" class="ml-auto mr-4 large-font">&#176;</h1>
+                        
                        
                     </div>
                 </div>

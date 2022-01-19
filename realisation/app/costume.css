@@ -1,5 +1,5 @@
 img{
-    width: 100PX;
+    width: 80PX;
     height: 90px;
 }
 .humidity{
@@ -9,5 +9,17 @@ justify-content: flex-start;
 }
 #date{
     font-size: 30px;
+    
+}
+.humidity ,#iconHumidity,.country{
+    
+    width: 40PX;
+    height: 40px;
+    
+}
+.cityDate{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around ;
     
 }

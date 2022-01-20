@@ -26,6 +26,6 @@ class WeatherManager {
         weather.country = json.main.country
         weather.humidity = json.main.humidity
         this.#_currentForecast = weather
-
+        changePic(weather.description)
     }
 }

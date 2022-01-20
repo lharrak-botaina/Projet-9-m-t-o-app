@@ -56,4 +56,9 @@ function display(currentForecast) {
 
     
 
-    
+    function changePic(description){
+        if (description == "Clear"){
+            document.getElementById("card").style.backgroundImage = "url('sky.jpg')";
+
+        }
+    }

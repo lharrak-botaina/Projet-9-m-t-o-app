@@ -38,9 +38,9 @@ function display(currentForecast) {
     
     document.getElementById('city').textContent= currentForecast.city
     document.getElementById('temp').textContent= currentForecast.temp+ ""+ "°C"
-document.getElementById('clouds').textContent = currentForecast.clouds + ""+ "%"
+    document.getElementById('clouds').textContent = currentForecast.clouds + ""+ "%"
     document.getElementById('icon').src = "http://openweathermap.org/img/w/"+currentForecast.iconCode+".png";
-document.getElementById('wind').textContent = currentForecast.wind + " "+"km/h"
+    document.getElementById('wind').textContent = currentForecast.wind + " "+"km/h"
     document.getElementById('desc').textContent= currentForecast.description
     document.getElementById('humidity').textContent= currentForecast.humidity
     document.getElementById('country').textContent= currentForecast.country
@@ -58,9 +58,18 @@ document.getElementById('wind').textContent = currentForecast.wind + " "+"km/h"
 
     
 
-    // function changePic(description){
-    //     if (description == "Clear"){
-    //         document.getElementById("card").style.backgroundImage = "url('sky.jpg')";
+    function changePic(description){
+        if (description == "Clear"){
+            document.getElementById("img1").style.backgroundImage = "url('https://thumbs.gfycat.com/FancyFoolhardyKestrel-size_restricted.gif')";
+            document.getElementById("img1").style.backgroundSize = "cover"
+            document.getElementById("img1").style.color ='#ffff'
+            document.getElementById("img1").style.textDecorationStyle = "solid"
+        }else 
+        if(description == "Clouds"){
 
-    //     }
-    // }
+            document.getElementById("img1").style.backgroundImage = "url('clouds-sky.gif')";
+            document.getElementById("img1").style.backgroundSize = "cover"
+            document.getElementById("img1").style.color ='#ffff'
+            document.getElementById("img1").style.textDecorationStyle = "solid"
+        }
+    }

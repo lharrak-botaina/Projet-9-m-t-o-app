@@ -29,6 +29,6 @@ class WeatherManager {
         weather.clouds = json.clouds.all
         
         this.#_currentForecast = weather
-        // changePic(weather.description)
+        changePic(weather.description)
     }
 }

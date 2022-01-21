@@ -2,7 +2,7 @@ body {
     color: #fff;
     overflow-x: hidden;
     height: 100%;
-    background-image: linear-gradient(#81D4FA, #2196F3);
+    background-image: linear-gradient(#cddde4, #207cc7);
     background-repeat: no-repeat
 }
 
@@ -11,7 +11,10 @@ body {
 }
 
 .card1 {
-    background-image: linear-gradient(#2196F3, #81D4FA);
+    /* background-image: url(/src/XFbw.gif); */
+    /* background-size: cover; */
+    
+    /* background-image: linear-gradient(#2196F3, #81D4FA); */
     padding: 30px 20px 30px 50px
 }
 
@@ -94,4 +97,18 @@ input:focus {
     .card1 {
         padding-left: 26px
     }
+}
+
+
+#info{
+
+   width: 800px;
+   height: 110px;
+   background: rgb(255, 255, 255); 
+   background: rgba(78, 74, 74, 0.5);
+   
+}
+
+#temp, #date, #city, #icon {
+    opacity: 0.9;
 }

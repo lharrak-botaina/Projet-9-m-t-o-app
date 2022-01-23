@@ -46,30 +46,52 @@ function display(currentForecast) {
     document.getElementById('country').textContent= currentForecast.country
 
 }
-
+//date
     let dateToday =document.getElementById("date");
     let today = new Date();
     let day =`${today.getDate() < 10?"0" :""}${today.getDate()}`
     let month =`${(today.getMonth()+1) < 10?"0" :""}${today.getMonth()+1}`
     let year =today.getFullYear();
-    dateToday.textContent =`${day}/${month}/${year} `
-
-
+    dateToday.textContent =`${day}/${month}/${year}    `
+//time 
+    let timeToday =document.getElementById("time");
+    let time = new Date()
+    let h = `${time.getHours() < 10?"0" :""}${time.getHours()}`
+    let m = `${time.getMinutes() < 10?"0" :""}${time.getMinutes()}`
+    timeToday.textContent =`${h}:${m}`
+    
+    
 
     
 
     function changePic(description){
         if (description == "Clear"){
-            document.getElementById("img1").style.backgroundImage = "url('https://thumbs.gfycat.com/FancyFoolhardyKestrel-size_restricted.gif')";
+            document.getElementById("img1").style.backgroundImage = "url('img/https://thumbs.gfycat.com/FancyFoolhardyKestrel-size_restricted.gif')";
             document.getElementById("img1").style.backgroundSize = "cover"
             document.getElementById("img1").style.color ='#ffff'
             document.getElementById("img1").style.textDecorationStyle = "solid"
         }else 
         if(description == "Clouds"){
 
-            document.getElementById("img1").style.backgroundImage = "url('clouds-sky.gif')";
+            document.getElementById("img1").style.backgroundImage = "url('img/clouds-sky.gif')";
+            document.getElementById("img1").style.backgroundSize = "cover"
+            document.getElementById("img1").style.color ='#ffff'
+            document.getElementById("img1").style.textDecorationStyle = "solid"
+        }else 
+        if(description == "Rain"){
+         
+            document.getElementById("img1").style.backgroundImage = "url('img/rain-raining.gif')";
             document.getElementById("img1").style.backgroundSize = "cover"
             document.getElementById("img1").style.color ='#ffff'
             document.getElementById("img1").style.textDecorationStyle = "solid"
         }
     }
+
+
+    // function timePic(timeToday) {
+    //     if(timeToday >= "18:30" &&   ){
+    //         document.getElementById("img1").style.backgroundImage = "url('night-clouds.jpg')";
+
+    //     }
+        
+    // }

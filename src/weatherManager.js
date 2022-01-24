@@ -30,5 +30,6 @@ class WeatherManager {
         
         this.#_currentForecast = weather
         changePic(weather.description)
+        // timePic(timeToday)
     }
 }

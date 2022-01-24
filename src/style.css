@@ -2,7 +2,11 @@ body {
     color: #fff;
     overflow-x: hidden;
     height: 100%;
+<<<<<<< HEAD
     background-image: linear-gradient(#cddde4, #9db8ce);
+=======
+    background-image: linear-gradient(#cddde4, #aecfeb);
+>>>>>>> bf1c14d19f1d6d07f4802cd088c7f43d2eb588d5
     background-repeat: no-repeat
 }
 

@@ -66,7 +66,7 @@ function display(currentForecast) {
 
     function changePic(description){
         if (description == "Clear"){
-            document.getElementById("img1").style.backgroundImage = "url('img/https://thumbs.gfycat.com/FancyFoolhardyKestrel-size_restricted.gif')";
+            document.getElementById("img1").style.backgroundImage = "url('img/XFbw.gif')";
             document.getElementById("img1").style.backgroundSize = "cover"
             document.getElementById("img1").style.color ='#ffff'
             document.getElementById("img1").style.textDecorationStyle = "solid"
